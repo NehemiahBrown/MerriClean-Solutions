@@ -2,11 +2,11 @@ import { ChevronRight, Medal, ShieldCheck, CircleCheckBig } from "lucide-react";
 import CleanSink from "../assets/cleansink.jpg";
 export default function Hero() {
   return (
-    <section id="home" className="py-8 px-8 w-full pt-[70px]">
+    <section id="home" className="scroll-mt-20 py-8 px-8 w-full">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-5xl mx-auto w-full px-6">
         <div className="flex flex-col gap-5 w-full lg:flex-1 min-w-0">
           <div className="flex bg-primary-color/20 px-2 rounded-sm self-start">
-            <p class="text-xs font-bold">PRISTINE QUALITY ASSURED</p>
+            <p className="text-xs font-bold">PRISTINE QUALITY ASSURED</p>
             <ChevronRight className="text-secondary-color" size={16} />
           </div>
           <h1 className="text-4xl font-extrabold">
@@ -23,7 +23,7 @@ export default function Hero() {
           >
             Request a Quote
           </a>
-          <div className="flex gap-2 text-xs font-bold">
+          <div className="flex flex-col sm:flex-row gap-2 text-xs font-bold">
             <div className="flex items-center gap-1">
               <Medal className="text-secondary-color" size={14} />
               <p className="whitespace-nowrap">Proudly Veteran-Owned</p>
