@@ -11,10 +11,6 @@ export default function NavBar() {
 
   useEffect(() => {
     const navSections = document.querySelectorAll("section[id]");
-    console.log(
-      "Observed sections:",
-      [...navSections].map((section) => section.id),
-    );
     const observer = new IntersectionObserver(
       (entries) =>
         entries.forEach((entry) => {
@@ -64,9 +60,12 @@ export default function NavBar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <button className="bg-button-background px-4 py-1 text-light-text rounded-md hover:brightness-90 cursor-pointer">
+        <a
+          href="#contact"
+          className="bg-button-background px-4 py-1 text-light-text rounded-md hover:brightness-90 cursor-pointer"
+        >
           Request a Quote
-        </button>
+        </a>
       </div>
     </nav>
   );
