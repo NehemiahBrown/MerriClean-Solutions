@@ -3,10 +3,10 @@ import CleanSink from "../assets/cleansink.jpg";
 export default function Hero() {
   return (
     <section id="home" className="scroll-mt-20 py-8 px-8 w-full">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-5xl mx-auto w-full px-6">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-5xl mx-auto w-full md:px-6">
         <div className="flex flex-col gap-5 w-full lg:flex-1 min-w-0">
-          <div className="flex bg-primary-color/20 px-2 rounded-sm self-start">
-            <p className="text-xs font-bold">PRISTINE QUALITY ASSURED</p>
+          <div className="flex items-center bg-surface-color px-2 py-1 rounded-md self-start">
+            <p className="text-xs uppercase tracking-wider font-bold">pristine quality assured</p>
             <ChevronRight className="text-secondary-color" size={16} />
           </div>
           <h1 className="text-4xl font-extrabold">
@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
           <a
             href="#contact"
-            className="bg-button-background px-4 py-1 text-light-text rounded-md self-start hover:brightness-90 cursor-pointer"
+            className="bg-button-background px-4 py-2 text-sm text-light-text rounded-md self-start hover:brightness-90 cursor-pointer"
           >
             Request a Quote
           </a>
@@ -39,7 +39,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="w-full lg:w-[50%] lg:shrink-0">
+        <div className="w-full lg:w-[42%] lg:shrink-0">
           <img
             className="w-full aspect-video lg:aspect-square object-cover rounded-lg"
             src={CleanSink}

@@ -4,18 +4,20 @@
   --color-primary-color: #0a1e38;
   --color-secondary-color: #b51d2a;
   --color-tertiary-color: #e8b84e;
-  --color-surface-color: #30465f;
+  --color-surface-color: #E8F0FC;
   --color-card-color: #ffffff;
+  --color-muted-gold: #B8860B;
 
   /* Background Colors */
   --color-primary-background: #f7f9ff;
   --color-secondary-background: #0a1e38;
-  --color-teritary-background: #30465f;
+  --color-teritary-background: #E8F0FC;
   --color-button-background: #b51d2a;
 
   --color-primary-text: #0a1e38;
   --color-secondary-text: #475569;
   --color-light-text: #ffffff;
+  --color-muted-text: #52525B;
 }
 
 body {

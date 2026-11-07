@@ -82,7 +82,7 @@ export default function NavBar() {
         </ul>
         <a
           href="#contact"
-          className="hidden md:flex bg-button-background px-4 py-1 text-light-text rounded-md hover:brightness-90 cursor-pointer"
+          className="hidden md:flex bg-button-background text-sm px-4 py-1 text-light-text rounded-md hover:brightness-90 cursor-pointer"
         >
           Request a Quote
         </a>
