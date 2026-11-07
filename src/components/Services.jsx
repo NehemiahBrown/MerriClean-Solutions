@@ -5,7 +5,7 @@ export default function Services() {
       <div className="flex flex-col gap-2 text-center mx-auto">
         <p className="text-xs font-semibold uppercase tracking-wider mx-auto text-muted-gold">What we offer</p>
         <h2 className="text-4xl font-extrabold text-primary-color">Cleaning Services for Every Space</h2>
-        <p className="max-w-2xl mx-auto">Tailored residential and commerical cleaning packages designed to maintain pristine, healthy environments.</p>
+        <p className="max-w-2xl mx-auto">Tailored residential and commercial cleaning packages designed to maintain pristine, healthy environments.</p>
       </div>
       <div className="mt-8 max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full mx-auto">
         <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
@@ -20,7 +20,7 @@ export default function Services() {
             </div>
             <div className="flex items-center gap-1">
               <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Vaccuming & Mopping</p>
+              <p className="text-xs">Vacuuming & Mopping</p>
             </div>
             <div className="flex items-center gap-1">
               <CircleCheck className="text-secondary-color" size={12} />
@@ -35,13 +35,13 @@ export default function Services() {
           <div className="mt-auto pt-6 w-full">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm py-1 text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
             >
               Book Residential
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 bg-card-color p-4">
+        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
           <Building size={40} className="bg-surface-color p-2 rounded-md" />
           <p className="text-lg font-semibold">Commercial Cleaning</p>
           <p className="text-xs">Starting at &nbsp; <span className="font-extrabold text-lg">$150</span> &nbsp;/visit</p>
@@ -68,13 +68,13 @@ export default function Services() {
           <div className="mt-auto pt-6 w-full">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm py-1 text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
             >
               Book Commercial
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 bg-card-color p-4">
+        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
           <BroomSparkles size={40} className="bg-surface-color p-2 rounded-md" />
           <p className="text-lg font-semibold">Deep Cleaning</p>
           <p className="text-xs">Starting at &nbsp; <span className="font-extrabold text-lg">$175</span> &nbsp;/visit</p>
@@ -100,13 +100,13 @@ export default function Services() {
           <div className="mt-auto pt-6 w-full">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm py-1 text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
             >
               Book Deep Clean
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 bg-card-color p-4">
+        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
           <CalendarDays size={40} className="bg-surface-color p-2 rounded-md" />
           <p className="text-lg font-semibold">Regular Cleaning</p>
           <p className="text-xs">Starting at &nbsp; <span className="font-extrabold text-lg">$75</span> &nbsp;/visit</p>
