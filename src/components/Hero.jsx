@@ -6,10 +6,12 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-5xl mx-auto w-full md:px-6">
         <div className="flex flex-col gap-5 w-full lg:flex-1 min-w-0">
           <div className="flex items-center bg-surface-color px-2 py-1 rounded-md self-start">
-            <p className="text-xs uppercase tracking-wider font-bold">pristine quality assured</p>
+            <p className="text-xs uppercase tracking-wider font-bold">
+              pristine quality assured
+            </p>
             <ChevronRight className="text-secondary-color" size={16} />
           </div>
-          <h1 className="text-4xl font-extrabold">
+          <h1 className="text-5xl font-extrabold">
             Clean Spaces.
             <span className="block text-secondary-color">Fresh Starts.</span>
           </h1>
