@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="scroll-mt-20 py-8 px-8 w-full bg-surface-color"
+      className="scroll-mt-18 py-8 px-8 w-full bg-surface-color"
     >
       <div className="flex flex-col gap-2 text-center mx-auto">
         <p className="text-xs font-extrabold uppercase tracking-wider mx-auto text-muted-gold">
@@ -18,7 +18,7 @@ export default function Services() {
         <h2 className="text-4xl font-extrabold text-primary-color">
           Cleaning Services for Every Space
         </h2>
-        <p className="max-w-2xl mx-auto">
+        <p className="max-w-2xl mx-auto text-sm">
           Tailored residential and commercial cleaning packages designed to
           maintain pristine, healthy environments.
         </p>

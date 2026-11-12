@@ -4,7 +4,7 @@ export default function OurWork() {
   return (
     <section
       id="our-work"
-      className="bg-secondary-background scroll-mt-20 py-8 px-8 w-full"
+      className="bg-secondary-background scroll-mt-18 py-8 px-8 w-full"
     >
       <div>
         <div className="flex flex-col justify-center items-center gap-2 text-center">
@@ -20,10 +20,10 @@ export default function OurWork() {
           </p>
         </div>
       </div>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-2">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-2">
         <div className="flex flex-col h-full w-full overflow-hidden rounded-lg">
           <div className="flex bg-teritary-background/60 p-2 gap-2">
-            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-square lg:aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\dirtyshelf.jpg"
@@ -31,7 +31,7 @@ export default function OurWork() {
               />
               <p className="absolute top-2 left-2 uppercase text-xs tracking-wide text-card-color font-bold bg-secondary-color px-2 py-1 rounded-lg">Before</p>
             </div>
-            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-square lg:aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\cleanshelf.jpg"
@@ -59,7 +59,7 @@ export default function OurWork() {
         </div>
         <div className="flex flex-col h-full w-full overflow-hidden rounded-lg">
           <div className="flex bg-teritary-background/60 p-2 gap-2">
-            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-square lg:aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\dirtyfan.jpg"
@@ -67,7 +67,7 @@ export default function OurWork() {
               />
               <p className="absolute top-2 left-2 uppercase text-xs tracking-wide text-card-color font-bold bg-secondary-color px-2 py-1 rounded-lg">Before</p>
             </div>
-            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-square lg:aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\cleanfan.jpg"
@@ -94,7 +94,7 @@ export default function OurWork() {
         </div>
         <div className="flex flex-col h-full w-full overflow-hidden rounded-lg">
           <div className="flex bg-teritary-background/60 p-2 gap-2">
-            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-square lg:aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\dirtysink.jpg"
@@ -103,7 +103,7 @@ export default function OurWork() {
               <p className="absolute top-2 left-2 uppercase text-xs tracking-wide text-card-color font-bold bg-secondary-color px-2 py-1 rounded-lg">Before</p>
 
             </div>
-            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-square lg:aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\cleansink.jpg"
@@ -140,7 +140,7 @@ export default function OurWork() {
           <div className="flex flex-col items-center">
             <p className="flex items-center text-card-color font-bold text-5xl"> 100% </p>
             <p className="text-card-color text-sm font-bold text-center">Commitment to Quality</p>
-            <p className="text-[#CBD5E1] text-sm text-center px-2">Attention to Detail in <span className="text-underline font-bold">Every</span> Clean</p>
+            <p className="text-[#CBD5E1] text-sm text-center px-2">Attention to Detail in <span className="underline underline-offset-3 font-bold">Every</span> Clean</p>
           </div>
           <div className="w-[1px] self-stretch bg-card-color/60"></div>
           <div className="flex flex-col items-center">
