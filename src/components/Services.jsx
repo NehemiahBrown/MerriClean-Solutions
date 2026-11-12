@@ -28,7 +28,7 @@ export default function Services() {
           <House size={40} className="bg-surface-color p-2 rounded-md" />
           <p className="text-lg font-semibold">Residential Cleaning</p>
           <p className="text-xs">
-            Starting at &nbsp;{" "}
+            Starting at &nbsp;
             <span className="font-extrabold text-lg">$80</span> &nbsp;/visit
           </p>
           <p className="text-xs">

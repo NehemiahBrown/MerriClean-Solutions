@@ -1,4 +1,4 @@
-import { CircleCheck } from "lucide-react"
+import { CircleCheck, Plus } from "lucide-react"
 
 export default function OurWork() {
   return (
@@ -23,19 +23,22 @@ export default function OurWork() {
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-2">
         <div className="flex flex-col h-full w-full overflow-hidden rounded-lg">
           <div className="flex bg-teritary-background/60 p-2 gap-2">
-            <div className="flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\dirtyshelf.jpg"
                 alt="An unorganized living space."
               />
+              <p className="absolute top-2 left-2 uppercase text-xs tracking-wide text-card-color font-bold bg-secondary-color px-2 py-1 rounded-lg">Before</p>
             </div>
-            <div className="flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\cleanshelf.jpg"
                 alt="An organized living space."
               />
+              <p className="absolute top-2 left-2 uppercase text-xs tracking-wide font-bold bg-tertiary-color px-2 py-1 rounded-lg">After</p>
+
             </div>
           </div>
           <div className="flex flex-col flex-1 gap-2 bg-teritary-background px-4 py-6">
@@ -56,19 +59,21 @@ export default function OurWork() {
         </div>
         <div className="flex flex-col h-full w-full overflow-hidden rounded-lg">
           <div className="flex bg-teritary-background/60 p-2 gap-2">
-            <div className="flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\dirtyfan.jpg"
                 alt="An unorganized living space."
               />
+              <p className="absolute top-2 left-2 uppercase text-xs tracking-wide text-card-color font-bold bg-secondary-color px-2 py-1 rounded-lg">Before</p>
             </div>
-            <div className="flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\cleanfan.jpg"
                 alt="An organized living space."
               />
+              <p className="absolute top-2 left-2 uppercase text-xs tracking-wide font-bold bg-tertiary-color px-2 py-1 rounded-lg">After</p>
             </div>
           </div>
           <div className="flex flex-col flex-1 gap-2 bg-teritary-background px-4 py-6">
@@ -89,19 +94,22 @@ export default function OurWork() {
         </div>
         <div className="flex flex-col h-full w-full overflow-hidden rounded-lg">
           <div className="flex bg-teritary-background/60 p-2 gap-2">
-            <div className="flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\dirtysink.jpg"
                 alt="An unorganized living space."
               />
+              <p className="absolute top-2 left-2 uppercase text-xs tracking-wide text-card-color font-bold bg-secondary-color px-2 py-1 rounded-lg">Before</p>
+
             </div>
-            <div className="flex-1 min-w-0 aspect-[3/4] overflow-hidden">
+            <div className="relative flex-1 min-w-0 aspect-[3/4] overflow-hidden">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src="src\assets\cleansink.jpg"
                 alt="An organized living space."
               />
+              <p className="absolute top-2 left-2 uppercase text-xs tracking-wide font-bold bg-tertiary-color px-2 py-1 rounded-lg">After</p>
             </div>
           </div>
           <div className="flex flex-col flex-1 gap-2 bg-teritary-background px-4 py-6">
@@ -121,7 +129,27 @@ export default function OurWork() {
           </div>
         </div>
       </div>
-      <div className="bg-teritary-background"></div>
+      <div className="mt-8 py-6 max-w-6xl mx-auto bg-teritary-background rounded-lg">
+        <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row justify-around items-center px-2">
+          <div className="flex flex-col items-center">
+            <p className="flex items-center text-tertiary-color font-bold text-5xl">10 <Plus size={28} /></p>
+            <p className="text-card-color text-sm font-bold text-center">Years of Experience</p>
+            <p className="text-[#CBD5E1] text-sm text-center px-2">Professional Cleaning Expertise</p>
+          </div>
+          <div className="w-[1px] self-stretch bg-card-color/60"></div>
+          <div className="flex flex-col items-center">
+            <p className="flex items-center text-card-color font-bold text-5xl"> 100% </p>
+            <p className="text-card-color text-sm font-bold text-center">Commitment to Quality</p>
+            <p className="text-[#CBD5E1] text-sm text-center px-2">Attention to Detail in <span className="text-underline font-bold">Every</span> Clean</p>
+          </div>
+          <div className="w-[1px] self-stretch bg-card-color/60"></div>
+          <div className="flex flex-col items-center">
+            <p className="flex items-center text-tertiary-color font-bold text-5xl">150 <Plus size={28} /></p>
+            <p className="text-card-color text-sm font-bold text-center">Homes & Offices Cleaned</p>
+            <p className="text-[#CBD5E1] text-sm text-center px-2">Across Jackson, Williamson, & Franklin</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
