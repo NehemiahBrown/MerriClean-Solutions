@@ -14,7 +14,7 @@ export default function OurWork() {
           <h2 className="text-card-color font-bold text-4xl">
             Real Spaces. Real Results.
           </h2>
-          <p className="text-[#CBD5E1] max-w-2xl mx-auto">
+          <p className="text-[#CBD5E1] text-sm max-w-2xl mx-auto">
             Explore real residential and commercial transformations delivered
             across Southern Illinois.
           </p>
