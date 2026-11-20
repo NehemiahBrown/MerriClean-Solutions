@@ -26,7 +26,7 @@ export default function NavBar() {
   //Navigation observer for active links
   const options = {
     root: null,
-    rootMargin: "-30% 0px -69% 0px",
+    rootMargin: "-10% 0px -60% 0px",
     threshold: 0,
   };
 
