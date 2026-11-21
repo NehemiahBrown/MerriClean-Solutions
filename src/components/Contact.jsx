@@ -12,25 +12,26 @@ export default function Contact() {
         Tell us about your property and cleaning needs. We respond promptly with customized, transparent estimates.
       </p>
       <div className="mt-8 flex flex-col-reverse lg:flex-row gap-6 justify-center items-center w-full max-w-5xl mx-auto">
-        <form action="" className="flex flex-col gap-3 items-center bg-surface-color p-6 rounded-md max-w-[560px] w-full">
+        <form method="POST" name="quote-request" data-netlify="true" className="flex flex-col gap-3 items-center bg-surface-color p-6 rounded-md max-w-[560px] w-full">
+          <input type="hidden" name="form-name" value="quote-request" />
           <div className="flex justify-between w-full gap-2">
             <div className="flex flex-1 flex-col gap-1">
               <label className="text-left text-sm font-semibold text-primary-color" htmlFor="fullName">Full Name *</label>
-              <input id="fullName" type="text" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color placeholder:text-slate-400 placeholder:text-sm focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" placeholder="John Doe" required />
+              <input id="fullName" name="fullName" type="text" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color placeholder:text-slate-400 placeholder:text-sm focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" placeholder="John Doe" required />
             </div>
             <div className="flex flex-1 flex-col gap-1">
               <label className="text-left text-sm font-semibold text-primary-color" htmlFor="email">Email Address *</label>
-              <input id="email" type="email" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color placeholder:text-slate-400 placeholder:text-sm focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" placeholder="johndoe@email.com" required />
+              <input id="email" name="email" type="email" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color placeholder:text-slate-400 placeholder:text-sm focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" placeholder="johndoe@email.com" required />
             </div>
           </div>
           <div className="flex justify-between w-full gap-2">
             <div className="flex flex-1 flex-col gap-1">
-              <label className="text-left text-sm font-semibold text-primary-color" htmlFor="PhoneNumber">Phone Number *</label>
-              <input id="phoneNmber" type="text" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color placeholder:text-slate-400 placeholder:text-sm focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" placeholder="(123)-456-7890" required />
+              <label className="text-left text-sm font-semibold text-primary-color" htmlFor="phoneNumber">Phone Number *</label>
+              <input id="phoneNumber" name="phoneNumber" type="tel" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color placeholder:text-slate-400 placeholder:text-sm focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" placeholder="(123)-456-7890" required />
             </div>
             <div className="flex flex-1 flex-col gap-1">
               <label className="text-left text-sm font-semibold text-primary-color" htmlFor="serviceType">Service Type</label>
-              <select id="serviceType" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" defaultValue="">
+              <select id="serviceType" name="serviceType" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" defaultValue="">
                 <option value="" disabled>Select A Service</option>
                 <option value="residential">Residential Cleaning</option>
                 <option value="commercial">Commercial Cleaning</option>
@@ -42,7 +43,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col w-full gap-1">
             <label className="text-left text-sm font-semibold text-primary-color" htmlFor="propertyType">Property Type</label>
-            <select id="propertyType" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" defaultValue="">
+            <select id="propertyType" name="propertyType" className="border border-slate-300 bg-card-color rounded-md h-10 px-3 text-primary-color focus:border-primary-color focus:outline-2 focus:outline-primary-color/20" defaultValue="">
               <option value="" disabled>Select Property Type</option>
               <option value="single-family">Single-Family Home</option>
               <option value="apartment">Apartment / Condo</option>
