@@ -23,6 +23,7 @@ export default function NavBar() {
       mediaQuery.removeEventListener("change", handleMenuScreenChange);
     };
   }, []);
+
   //Navigation observer for active links
   const options = {
     root: null,
@@ -32,21 +33,22 @@ export default function NavBar() {
 
   useEffect(() => {
     const navSections = document.querySelectorAll("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleSection(entry.target.id);
-          }
-        }),
-      options,
-    );
 
-    navSections.forEach((section) => {
-      observer.observe(section);
-    });
+    function updateActiveSection(){
+      const detectionPoint = window.innerHeight * 0.25;
 
-    return () => observer.disconnect();
+      navSections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if(detectionPoint >= rect.top && detectionPoint < rect.bottom){
+          setVisibleSection(section.id)
+        }
+      });
+    }
+    updateActiveSection()
+    window.addEventListener("scroll", updateActiveSection)
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection)
+    }
   }, []);
 
   return (
