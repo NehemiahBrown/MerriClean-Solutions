@@ -1,12 +1,12 @@
-import { ChevronRight, Medal, ShieldCheck, CircleCheckBig } from "lucide-react";
-import CleanSink from "../assets/cleansink.jpg";
+import { ChevronRight, Medal, ShieldCheck, CircleCheckBig } from "lucide-react"
+import CleanSink from "../assets/cleansink.jpg"
 export default function Hero() {
   return (
-    <section id="home" className="scroll-mt-20 py-8 px-8 w-full">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-5xl mx-auto w-full md:px-6">
-        <div className="flex flex-col gap-5 w-full lg:flex-1 min-w-0">
-          <div className="flex items-center bg-surface-color px-2 py-1 rounded-md self-start">
-            <p className="text-xs uppercase tracking-wider font-bold">
+    <section id="home" className="w-full scroll-mt-20 px-8 py-8">
+      <div className="mx-auto flex w-full max-w-5xl flex-col items-center justify-center gap-12 md:px-6 lg:flex-row">
+        <div className="flex w-full min-w-0 flex-col gap-5 lg:flex-1">
+          <div className="flex items-center self-start rounded-md bg-surface-color px-2 py-1">
+            <p className="text-xs font-bold tracking-wider uppercase">
               pristine quality assured
             </p>
             <ChevronRight className="text-secondary-color" size={16} />
@@ -21,11 +21,11 @@ export default function Hero() {
           </p>
           <a
             href="#contact"
-            className="bg-button-background px-4 py-2 text-sm text-light-text rounded-md self-start hover:brightness-90 cursor-pointer"
+            className="cursor-pointer self-start rounded-md bg-button-background px-4 py-2 text-sm text-light-text hover:brightness-90"
           >
             Request a Quote
           </a>
-          <div className="flex flex-col sm:flex-row gap-2 text-xs font-bold">
+          <div className="flex flex-col gap-2 text-xs font-bold sm:flex-row">
             <div className="flex items-center gap-1">
               <Medal className="text-secondary-color" size={14} />
               <p className="whitespace-nowrap">Proudly Veteran-Owned</p>
@@ -43,12 +43,12 @@ export default function Hero() {
 
         <div className="w-full lg:w-[42%] lg:shrink-0">
           <img
-            className="w-full aspect-video lg:aspect-square object-cover rounded-lg"
+            className="aspect-video w-full rounded-lg object-cover lg:aspect-square"
             src={CleanSink}
             alt="A clean sink."
           />
         </div>
       </div>
     </section>
-  );
+  )
 }

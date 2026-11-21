@@ -11,12 +11,12 @@
   /* Background Colors */
   --color-primary-background: #f7f9ff;
   --color-secondary-background: #0a1e38;
-  --color-teritary-background: #1d324c;
+  --color-tertiary-background: #1d324c;
   --color-button-background: #b51d2a;
 
   --color-primary-text: #0a1e38;
   --color-secondary-text: #475569;
-  --color-surface-text: #CBD5E1;
+  --color-surface-text: #cbd5e1;
   --color-light-text: #ffffff;
   --color-muted-text: #52525b;
 }

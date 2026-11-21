@@ -4,32 +4,32 @@ import {
   BroomSparkles,
   CalendarDays,
   CircleCheck,
-} from "lucide-react";
+} from "lucide-react"
 export default function Services() {
   return (
     <section
       id="services"
-      className="scroll-mt-18 py-8 px-8 w-full bg-surface-color"
+      className="w-full scroll-mt-18 bg-surface-color px-8 py-8"
     >
-      <div className="flex flex-col gap-2 text-center mx-auto">
-        <p className="text-xs font-extrabold uppercase tracking-wider mx-auto text-muted-gold">
+      <div className="mx-auto flex flex-col gap-2 text-center">
+        <p className="mx-auto text-xs font-extrabold tracking-wider text-muted-gold uppercase">
           What we offer
         </p>
         <h2 className="text-4xl font-extrabold text-primary-color">
           Cleaning Services for Every Space
         </h2>
-        <p className="max-w-2xl mx-auto text-sm">
+        <p className="mx-auto max-w-2xl text-sm">
           Tailored residential and commercial cleaning packages designed to
           maintain pristine, healthy environments.
         </p>
       </div>
-      <div className="mt-8 max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full mx-auto">
-        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
-          <House size={40} className="bg-surface-color p-2 rounded-md" />
+      <div className="mx-auto mt-8 grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+          <House size={40} className="rounded-md bg-surface-color p-2" />
           <p className="text-lg font-semibold">Residential Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;
-            <span className="font-extrabold text-lg">$80</span> &nbsp;/visit
+            <span className="text-lg font-extrabold">$80</span> &nbsp;/visit
           </p>
           <p className="text-xs">
             Comprehensive home cleaning covering kitchens, bathrooms, living
@@ -53,21 +53,21 @@ export default function Services() {
               <p className="text-xs">Eco-friendly Supplies</p>
             </div>
           </div>
-          <div className="mt-auto pt-6 w-full">
+          <div className="mt-auto w-full pt-6">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="mx-auto block max-w-90 cursor-pointer rounded-md bg-button-background py-2 text-center text-sm font-medium text-light-text hover:brightness-90"
             >
               Book Residential
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
-          <Building size={40} className="bg-surface-color p-2 rounded-md" />
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+          <Building size={40} className="rounded-md bg-surface-color p-2" />
           <p className="text-lg font-semibold">Commercial Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;{" "}
-            <span className="font-extrabold text-lg">$150</span> &nbsp;/visit
+            <span className="text-lg font-extrabold">$150</span> &nbsp;/visit
           </p>
           <p className="text-xs">
             Professional janitorial and workspace sanitation for corporate
@@ -91,24 +91,24 @@ export default function Services() {
               <p className="text-xs">Breakroom & common area sanitation</p>
             </div>
           </div>
-          <div className="mt-auto pt-6 w-full">
+          <div className="mt-auto w-full pt-6">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="mx-auto block max-w-90 cursor-pointer rounded-md bg-button-background py-2 text-center text-sm font-medium text-light-text hover:brightness-90"
             >
               Book Commercial
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
           <BroomSparkles
             size={40}
-            className="bg-surface-color p-2 rounded-md"
+            className="rounded-md bg-surface-color p-2"
           />
           <p className="text-lg font-semibold">Deep Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;{" "}
-            <span className="font-extrabold text-lg">$175</span> &nbsp;/visit
+            <span className="text-lg font-extrabold">$175</span> &nbsp;/visit
           </p>
           <p className="text-xs">
             Intensive top-to-bottom scrub addressing built-up grime, inside
@@ -132,21 +132,21 @@ export default function Services() {
               <p className="text-xs">Interior window polishing</p>
             </div>
           </div>
-          <div className="mt-auto pt-6 w-full">
+          <div className="mt-auto w-full pt-6">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="mx-auto block max-w-90 cursor-pointer rounded-md bg-button-background py-2 text-center text-sm font-medium text-light-text hover:brightness-90"
             >
               Book Deep Clean
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 bg-card-color p-4 rounded-md">
-          <CalendarDays size={40} className="bg-surface-color p-2 rounded-md" />
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+          <CalendarDays size={40} className="rounded-md bg-surface-color p-2" />
           <p className="text-lg font-semibold">Regular Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;{" "}
-            <span className="font-extrabold text-lg">$75</span> &nbsp;/visit
+            <span className="text-lg font-extrabold">$75</span> &nbsp;/visit
           </p>
           <p className="text-xs">
             Dependable recurring maintenance cleaning scheduled weekly,
@@ -170,23 +170,23 @@ export default function Services() {
               <p className="text-xs">Straightforward pay-per-visit</p>
             </div>
           </div>
-          <div className="mt-auto pt-6 w-full">
+          <div className="mt-auto w-full pt-6">
             <a
               href="#contact"
-              className="block bg-button-background text-center text-sm text-light-text py-2 font-medium max-w-[360px] mx-auto rounded-md hover:brightness-90 cursor-pointer"
+              className="mx-auto block max-w-90 cursor-pointer rounded-md bg-button-background py-2 text-center text-sm font-medium text-light-text hover:brightness-90"
             >
               Book Recurring
             </a>
           </div>
         </div>
       </div>
-      <div className="mt-8 text-center mx-auto">
-        <p className="max-w-2xl mx-auto text-sm text-muted-text">
+      <div className="mx-auto mt-8 text-center">
+        <p className="mx-auto max-w-2xl text-sm text-muted-text">
           *Starting prices reflect standard square footage. Final estimates may
           vary based on property size, initial condition, and customized client
           requests. Free on-site quotes available.
         </p>
       </div>
     </section>
-  );
+  )
 }

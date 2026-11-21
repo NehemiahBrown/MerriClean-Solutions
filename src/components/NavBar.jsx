@@ -1,61 +1,61 @@
-import { useState, useEffect } from "react";
-import { X, Menu } from "lucide-react";
+import { useState, useEffect } from "react"
+import { X, Menu } from "lucide-react"
 
 export default function NavBar() {
-  const [visibleSection, setVisibleSection] = useState("home");
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [visibleSection, setVisibleSection] = useState("home")
+  const [hamburgerOpen, setHamburgerOpen] = useState(false)
 
   function toggleHamburgerMenu() {
-    setHamburgerOpen((current) => !current);
+    setHamburgerOpen((current) => !current)
   }
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const mediaQuery = window.matchMedia("(min-width: 768px)")
 
     function handleMenuScreenChange(event) {
       if (event.matches) {
-        setHamburgerOpen(false);
+        setHamburgerOpen(false)
       }
     }
 
-    mediaQuery.addEventListener("change", handleMenuScreenChange);
+    mediaQuery.addEventListener("change", handleMenuScreenChange)
     return () => {
-      mediaQuery.removeEventListener("change", handleMenuScreenChange);
-    };
-  }, []);
+      mediaQuery.removeEventListener("change", handleMenuScreenChange)
+    }
+  }, [])
 
   //Navigation observer for active links
   const options = {
     root: null,
     rootMargin: "-10% 0px -60% 0px",
     threshold: 0,
-  };
+  }
 
   useEffect(() => {
-    const navSections = document.querySelectorAll("section[id]");
+    const navSections = document.querySelectorAll("section[id]")
 
-    function updateActiveSection(){
-      const detectionPoint = window.innerHeight * 0.25;
+    function updateActiveSection() {
+      const detectionPoint = window.innerHeight * 0.25
 
       navSections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if(detectionPoint >= rect.top && detectionPoint < rect.bottom){
+        const rect = section.getBoundingClientRect()
+        if (detectionPoint >= rect.top && detectionPoint < rect.bottom) {
           setVisibleSection(section.id)
         }
-      });
+      })
     }
     updateActiveSection()
     window.addEventListener("scroll", updateActiveSection)
     return () => {
       window.removeEventListener("scroll", updateActiveSection)
     }
-  }, []);
+  }, [])
 
   return (
-    <nav className="sticky top-0 z-50 bg-card-color flex items-center h-[70px] w-full border-b border-b-surface-color/20">
-      <div className=" flex justify-between items-center w-full max-w-7xl mx-auto px-6">
+    <nav className="sticky top-0 z-50 flex h-17.5 w-full items-center border-b border-b-surface-color/20 bg-card-color">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6">
         <p className="font-bold whitespace-nowrap">Merriclean Solutions</p>
-        <ul className="hidden md:flex gap-4">
+        <ul className="hidden gap-4 md:flex">
           <li
             className={`border-b hover:border-b-secondary-color ${visibleSection === "home" ? "border-b-secondary-color" : "border-transparent"}`}
           >
@@ -84,7 +84,7 @@ export default function NavBar() {
         </ul>
         <a
           href="#contact"
-          className="hidden md:flex bg-button-background text-sm px-4 py-1 text-light-text rounded-md hover:brightness-90 cursor-pointer"
+          className="hidden cursor-pointer rounded-md bg-button-background px-4 py-1 text-sm text-light-text hover:brightness-90 md:flex"
         >
           Request a Quote
         </a>
@@ -94,20 +94,20 @@ export default function NavBar() {
           aria-label={hamburgerOpen ? "Close menu" : "Open menu"}
           aria-expanded={hamburgerOpen}
           aria-controls="mobile-navigation"
-          className="md:hidden cursor-pointer"
+          className="cursor-pointer md:hidden"
         >
           {hamburgerOpen ? <X /> : <Menu />}
         </button>
         <div
           id="mobile-navigation"
-          className={`absolute md:hidden flex flex-col top-full z-100 bg-card-color right-0 w-full px-6 py-8 border-b border-b-primary-color/20 ${hamburgerOpen ? "opacity-100 visible translate-y-0 pointer-events-auto" : "opacity-0 invisible -translate-y-8 pointer-events-none"} transition-all duration-300 ease-out`}
+          className={`absolute top-full right-0 z-100 flex w-full flex-col border-b border-b-primary-color/20 bg-card-color px-6 py-8 md:hidden ${hamburgerOpen ? "pointer-events-auto visible translate-y-0 opacity-100" : "pointer-events-none invisible -translate-y-8 opacity-0"} transition-all duration-300 ease-out`}
           inert={!hamburgerOpen}
         >
           <ul className="flex flex-col gap-3">
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full px-4 py-3 hover:bg-surface-color hover:text-card-color rounded-md transition-colors duration-200"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
                 href="#home"
               >
                 Home
@@ -116,7 +116,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full px-4 py-3 hover:bg-surface-color hover:text-card-color rounded-md transition-colors duration-200"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
                 href="#services"
               >
                 Services
@@ -125,7 +125,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full px-4 py-3 hover:bg-surface-color hover:text-card-color rounded-md transition-colors duration-200"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
                 href="#our-work"
               >
                 Our Work
@@ -134,7 +134,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full px-4 py-3 hover:bg-surface-color hover:text-card-color rounded-md transition-colors duration-200"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
                 href="#about"
               >
                 About
@@ -143,7 +143,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full px-4 py-3 hover:bg-surface-color hover:text-card-color rounded-md transition-colors duration-200"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
                 href="#contact"
               >
                 Contact
@@ -153,12 +153,12 @@ export default function NavBar() {
           <a
             onClick={() => setHamburgerOpen(false)}
             href="#contact"
-            className="mt-4 bg-button-background px-4 py-1 text-light-text rounded-md hover:brightness-90 self-start cursor-pointer"
+            className="mt-4 cursor-pointer self-start rounded-md bg-button-background px-4 py-1 text-light-text hover:brightness-90"
           >
             Request a Quote
           </a>
         </div>
       </div>
     </nav>
-  );
+  )
 }
