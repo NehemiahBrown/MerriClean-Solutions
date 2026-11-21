@@ -18,8 +18,15 @@ export default function Contact() {
             method="POST"
             name="quote-request"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             className="flex w-full max-w-140 flex-col items-center gap-3 rounded-md bg-surface-color p-6"
           >
+            <div className="hidden">
+              <label>
+                Don’t fill this out if you're human:{" "}
+                <input type="text" name="bot-field" />
+              </label>
+            </div>
             <input type="hidden" name="form-name" value="quote-request" />
             <div className="flex w-full justify-between gap-2">
               <div className="flex flex-1 flex-col gap-1">
