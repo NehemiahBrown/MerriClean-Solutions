@@ -1,6 +1,10 @@
 import { CircleCheck, Plus } from "lucide-react"
 import DirtyShelf from "../assets/dirtyshelf.jpg"
 import CleanShelf from "../assets/cleanshelf.jpg"
+import DirtyFan from "../assets/dirtyfan.jpg"
+import CleanFan from "../assets/cleanfan.jpg"
+import DirtySink from "../assets/dirtysink.jpg"
+import CleanSink from "../assets/cleansink.jpg"
 
 export default function OurWork() {
   return (
@@ -82,7 +86,7 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
-                src="src\assets\dirtyfan.jpg"
+                src={DirtyFan}
                 alt="An unorganized living space."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-secondary-color px-2 py-1 text-xs font-bold tracking-wide text-card-color uppercase">
@@ -92,7 +96,7 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
-                src="src\assets\cleanfan.jpg"
+                src={CleanFan}
                 alt="An organized living space."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-tertiary-color px-2 py-1 text-xs font-bold tracking-wide uppercase">
@@ -138,7 +142,7 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
-                src="src\assets\dirtysink.jpg"
+                src={DirtySink}
                 alt="An unorganized living space."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-secondary-color px-2 py-1 text-xs font-bold tracking-wide text-card-color uppercase">
@@ -148,7 +152,7 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
-                src="src\assets\cleansink.jpg"
+                src={CleanSink}
                 alt="An organized living space."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-tertiary-color px-2 py-1 text-xs font-bold tracking-wide uppercase">

@@ -1,4 +1,5 @@
 import { Medal, SearchCheck, MapPin, Leaf } from "lucide-react"
+import FounderImage from "../assets/founderImage.jpg"
 export default function About() {
   return (
     <section
@@ -9,7 +10,7 @@ export default function About() {
         <div className="w-full max-w-100 md:w-[42%] md:shrink-0">
           <img
             className="rounded-t-lg"
-            src="src/assets/founderImage.jpg"
+            src={FounderImage}
             alt="Tevin Merriweather"
           />
           <div className="rounded-b-lg bg-card-color p-4">

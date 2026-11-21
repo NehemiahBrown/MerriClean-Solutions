@@ -157,7 +157,7 @@ export default function Contact() {
             <div className="mt-4 flex flex-col gap-2">
               <div className="flex gap-2">
                 <Smartphone
-                  className="bg-tertiary-background rounded-full p-1.5 text-card-color"
+                  className="rounded-full bg-tertiary-background p-1.5 text-card-color"
                   size={30}
                 />
                 <div className="text-left">
@@ -174,7 +174,7 @@ export default function Contact() {
               </div>
               <div className="flex gap-2">
                 <Mail
-                  className="bg-tertiary-background rounded-full p-1.5 text-card-color"
+                  className="rounded-full bg-tertiary-background p-1.5 text-card-color"
                   size={30}
                 />
                 <div className="text-left">
@@ -191,7 +191,7 @@ export default function Contact() {
               </div>
               <div className="flex gap-2">
                 <Earth
-                  className="bg-tertiary-background rounded-full p-1.5 text-card-color"
+                  className="rounded-full bg-tertiary-background p-1.5 text-card-color"
                   size={30}
                 />
                 <div className="text-left">
