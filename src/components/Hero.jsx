@@ -11,13 +11,13 @@ export default function Hero() {
             </p>
             <ChevronRight className="text-secondary-color" size={16} />
           </div>
-          <h1 className="text-5xl font-extrabold">
+          <h1 className="text-[clamp(2rem,5vw,3rem)] leading-tight font-extrabold">
             Clean Spaces.
             <span className="block text-secondary-color">Fresh Starts.</span>
           </h1>
           <p className="max-w-lg">
             Let Merriclean Solutions take care of the cleaning so you can enjoy
-            a cleaner, healthier, and more welcoming environemnt.
+            a cleaner, healthier, and more welcoming environment.
           </p>
           <a
             href="#contact"
@@ -25,18 +25,18 @@ export default function Hero() {
           >
             Request a Quote
           </a>
-          <div className="flex flex-col gap-2 text-xs font-bold sm:flex-row">
+          <div className="flex flex-col flex-wrap gap-2 text-xs font-bold sm:flex-row">
             <div className="flex items-center gap-1">
               <Medal className="text-secondary-color" size={14} />
-              <p className="whitespace-nowrap">Proudly Veteran-Owned</p>
+              <p>Proudly Veteran-Owned</p>
             </div>
             <div className="flex items-center gap-1">
               <ShieldCheck className="text-secondary-color" size={14} />
-              <p className="whitespace-nowrap">5+ Years Trusted</p>
+              <p>5+ Years Trusted</p>
             </div>
             <div className="flex items-center gap-1">
               <CircleCheckBig className="text-secondary-color" size={14} />
-              <p className="whitespace-nowrap">100% Satisfaction</p>
+              <p>100% Satisfaction</p>
             </div>
           </div>
         </div>

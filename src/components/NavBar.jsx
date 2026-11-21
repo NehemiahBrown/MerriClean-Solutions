@@ -24,13 +24,6 @@ export default function NavBar() {
     }
   }, [])
 
-  //Navigation observer for active links
-  const options = {
-    root: null,
-    rootMargin: "-10% 0px -60% 0px",
-    threshold: 0,
-  }
-
   useEffect(() => {
     const navSections = document.querySelectorAll("section[id]")
 
