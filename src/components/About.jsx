@@ -43,7 +43,7 @@ export default function About() {
                 <p className="leading-tight font-bold">
                   Veteran Owned & Operated
                 </p>
-                <p className="text-xs">
+                <p className="text-sm">
                   Disciplined excellence, uncompromising integrity, and
                   dedicated service brought to every single cleaning mission.
                 </p>
@@ -58,7 +58,7 @@ export default function About() {
                 <p className="leading-tight font-bold">
                   Meticulous Attention to Detail
                 </p>
-                <p className="text-xs">
+                <p className="text-sm">
                   We inspect every corner, baseboard, and fixture so nothing is
                   overlooked. No rushed jobs.
                 </p>
@@ -73,7 +73,7 @@ export default function About() {
                 <p className="leading-tight font-bold">
                   Locally Owned & Community Rooted
                 </p>
-                <p className="text-xs">
+                <p className="text-sm">
                   Proudly serving Carbondale, Murphysboro, Marion, and
                   surrounding areas with reliable integrity.
                 </p>
@@ -88,7 +88,7 @@ export default function About() {
                 <p className="leading-tight font-bold">
                   Safe, Eco-Friendly Formulations
                 </p>
-                <p className="text-xs">
+                <p className="text-sm">
                   Premium grade cleaning solutions that protect children, pets,
                   and workplace respiratory health.
                 </p>

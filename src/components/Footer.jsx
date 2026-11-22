@@ -21,7 +21,7 @@ export default function Footer() {
                 Proudly Veteran-Owned
               </p>
               <p className="text-xs font-extrabold text-surface-text">
-                Satisfaction Guaranteed
+                Committed to Quality
               </p>
             </div>
           </div>
@@ -30,17 +30,17 @@ export default function Footer() {
               Get In Touch
             </p>
             <div className="flex flex-col gap-1.5">
-              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color">
+              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all ">
                 <Phone size={12} />
-                <a href="tel:6182807014">(618)-280-7014</a>
+                <a className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color" href="tel:6182807014">(618)-280-7014</a>
               </div>
-              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color">
+              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all ">
                 <Mail size={12} />
-                <a href="mailto:tevin533@gmail.com">tevin533@gmail.com</a>
+                <a className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color" href="mailto:tevin533@gmail.com">tevin533@gmail.com</a>
               </div>
-              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color">
+              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all ">
                 <Earth size={12} />
-                <a href="https://www.facebook.com/profile.php?id=61579963706617">
+                <a className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color" href="https://www.facebook.com/profile.php?id=61579963706617">
                   Facebook: Merriclean Solutions
                 </a>
               </div>

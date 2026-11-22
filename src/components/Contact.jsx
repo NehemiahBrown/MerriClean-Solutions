@@ -98,11 +98,11 @@ export default function Contact() {
                   <option value="" disabled>
                     Select A Service
                   </option>
-                  <option value="Residential">Residential Cleaning</option>
-                  <option value="Commercial">Commercial Cleaning</option>
-                  <option value="Deep">Deep Cleaning</option>
-                  <option value="Regular">Regular Cleaning</option>
-                  <option value="General">General Inquiry</option>
+                  <option value="Residential Cleaning">Residential Cleaning</option>
+                  <option value="Commercial Cleaning">Commercial Cleaning</option>
+                  <option value="Deep Cleaning">Deep Cleaning</option>
+                  <option value="Regular Cleaning">Regular Cleaning</option>
+                  <option value="General Inquiry">General Inquiry</option>
                 </select>
               </div>
             </div>
@@ -123,8 +123,8 @@ export default function Contact() {
                   Select Property Type
                 </option>
                 <option value="Single Family">Single-Family Home</option>
-                <option value="Apartment">Apartment / Condo</option>
-                <option value="Townhouse">Townhouse / Duplex</option>
+                <option value="Apartment / Condo">Apartment / Condo</option>
+                <option value="Townhouse / Duplex">Townhouse / Duplex</option>
                 <option value="Commercial">Commercial</option>
                 <option value="Individual Room">Individual Room</option>
                 <option value="Other">Other</option>
