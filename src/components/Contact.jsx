@@ -28,13 +28,13 @@ export default function Contact() {
               </label>
             </div>
             <input type="hidden" name="form-name" value="quote-request" />
-            <div className="flex flex-col sm:flex-row w-full justify-between gap-2">
+            <div className="flex w-full flex-col justify-between gap-2 sm:flex-row">
               <div className="flex flex-1 flex-col gap-1">
                 <label
                   className="text-left text-sm font-semibold text-primary-color"
                   htmlFor="fullName"
                 >
-                  Full Name *
+                  Full Name <span className="text-secondary-color">*</span>
                 </label>
                 <input
                   id="fullName"
@@ -51,7 +51,7 @@ export default function Contact() {
                   className="text-left text-sm font-semibold text-primary-color"
                   htmlFor="email"
                 >
-                  Email Address *
+                  Email Address <span className="text-secondary-color">*</span>
                 </label>
                 <input
                   id="email"
@@ -64,13 +64,13 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row w-full justify-between gap-2">
+            <div className="flex w-full flex-col justify-between gap-2 sm:flex-row">
               <div className="flex flex-1 flex-col gap-1">
                 <label
                   className="text-left text-sm font-semibold text-primary-color"
                   htmlFor="phoneNumber"
                 >
-                  Phone Number *
+                  Phone Number <span className="text-secondary-color">*</span>
                 </label>
                 <input
                   id="phoneNumber"
@@ -87,19 +87,24 @@ export default function Contact() {
                   className="text-left text-sm font-semibold text-primary-color"
                   htmlFor="serviceType"
                 >
-                  Service Type
+                  Service Type <span className="text-secondary-color">*</span>
                 </label>
                 <select
                   id="serviceType"
                   name="serviceType"
                   className="h-10 rounded-md border border-slate-300 bg-card-color px-3 text-primary-color focus:border-primary-color focus:outline-2 focus:outline-primary-color/20"
                   defaultValue=""
+                  required
                 >
                   <option value="" disabled>
                     Select A Service
                   </option>
-                  <option value="Residential Cleaning">Residential Cleaning</option>
-                  <option value="Commercial Cleaning">Commercial Cleaning</option>
+                  <option value="Residential Cleaning">
+                    Residential Cleaning
+                  </option>
+                  <option value="Commercial Cleaning">
+                    Commercial Cleaning
+                  </option>
                   <option value="Deep Cleaning">Deep Cleaning</option>
                   <option value="Regular Cleaning">Regular Cleaning</option>
                   <option value="General Inquiry">General Inquiry</option>
@@ -148,7 +153,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="flex w-full cursor-pointer items-center hover:brightness-90 justify-center gap-2 rounded-md bg-secondary-color py-3 font-semibold text-card-color"
+              className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-md bg-secondary-color py-3 font-semibold text-card-color hover:brightness-90"
             >
               Request A Quote <ChevronRight />{" "}
             </button>
@@ -168,7 +173,7 @@ export default function Contact() {
             <div className="mt-4 flex flex-col gap-2">
               <div className="flex gap-2">
                 <Smartphone
-                  className="rounded-full bg-tertiary-background p-1.5 text-card-color shrink-0"
+                  className="shrink-0 rounded-full bg-tertiary-background p-1.5 text-card-color"
                   size={30}
                 />
                 <div className="text-left">
@@ -185,15 +190,15 @@ export default function Contact() {
               </div>
               <div className="flex gap-2">
                 <Mail
-                  className="rounded-full bg-tertiary-background p-1.5 text-card-color shrink-0"
+                  className="shrink-0 rounded-full bg-tertiary-background p-1.5 text-card-color"
                   size={30}
                 />
-                <div className="text-left min-w-0">
+                <div className="min-w-0 text-left">
                   <p className="text-xs font-bold text-surface-color">
                     Email Inquiries
                   </p>
                   <a
-                    className="text-sm font-extrabold text-card-color break-words"
+                    className="text-sm font-extrabold wrap-break-word text-card-color"
                     href="mailto:tevin533@gmail.com"
                   >
                     tevin533@gmail.com
@@ -202,10 +207,10 @@ export default function Contact() {
               </div>
               <div className="flex gap-2">
                 <Earth
-                  className="rounded-full bg-tertiary-background p-1.5 text-card-color shrink-0"
+                  className="shrink-0 rounded-full bg-tertiary-background p-1.5 text-card-color"
                   size={30}
                 />
-                <div className="text-left min-w-0">
+                <div className="min-w-0 text-left">
                   <p className="text-xs font-bold text-surface-color">
                     Social Page
                   </p>
@@ -213,21 +218,22 @@ export default function Contact() {
                     className="text-sm font-extrabold text-card-color"
                     href="https://www.facebook.com/profile.php?id=61579963706617"
                   >
-                    Facebook: Merriclean Solutions
+                    Facebook: Solutions
                   </a>
+                  Merriclean
                 </div>
               </div>
             </div>
             <div className="mt-8">
               <div className="flex gap-2">
-                <Zap className="text-tertiary-color shrink-0" size={16} />
+                <Zap className="shrink-0 text-tertiary-color" size={16} />
                 <p className="text-left text-xs text-surface-color">
                   Average response time under 2 hours during normal business
                   hours.
                 </p>
               </div>
               <div className="flex gap-2">
-                <Clock className="text-tertiary-color shrink-0" size={16} />
+                <Clock className="shrink-0 text-tertiary-color" size={16} />
                 <p className="text-left text-xs text-surface-color">
                   Mon–Sat: 8:00 AM – 6:00 PM • Sun: By Appointment
                 </p>

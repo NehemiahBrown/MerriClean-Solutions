@@ -37,19 +37,31 @@ export default function Services() {
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Dusting & wiping surfaces</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Vacuuming & Mopping</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Sanitizing Bathrooms</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Eco-friendly Supplies</p>
             </div>
           </div>
@@ -75,20 +87,32 @@ export default function Services() {
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Conference room detailing</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Restroom sterilization</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Trash & recycling removal</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
-              <p className="text-sm">Breakroom & common area sanitation</p>
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
+              <p className="text-sm">Break-room & common area sanitation</p>
             </div>
           </div>
           <div className="mt-auto w-full pt-6">
@@ -116,19 +140,31 @@ export default function Services() {
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Inside oven & refrigerator</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Baseboards & door frames</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Detailed grout cleaning</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Interior window polishing</p>
             </div>
           </div>
@@ -154,19 +190,31 @@ export default function Services() {
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Scheduled recurring visits</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Same dedicated cleaner</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Priority scheduling slot</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <CircleCheck
+                className="shrink-0 text-secondary-color"
+                size={16}
+              />
               <p className="text-sm">Straightforward pay-per-visit</p>
             </div>
           </div>
