@@ -3,13 +3,14 @@ import FounderImage from "../assets/founderImage.jpg"
 export default function About() {
   return (
     <section
-      className="mt-12 w-full scroll-mt-18 bg-surface-color px-8 py-8"
+      className="w-full scroll-mt-18 bg-surface-color px-8 py-8"
       id="about"
     >
       <div className="mx-auto flex w-full max-w-5xl flex-col-reverse items-center justify-center gap-12 md:flex-row md:px-6">
-        <div className="w-full max-w-100 md:w-[42%] md:shrink-0">
+        <div className="w-full max-w-100 md:w-[42%] md:shrink-0 shadow-card">
           <img
-            className="rounded-t-lg"
+            className="rounded-t-lg aspect-square object-cover w-full"
+            loading="lazy"
             src={FounderImage}
             alt="Tevin Merriweather"
           />
@@ -18,11 +19,11 @@ export default function About() {
             <p className="text-xs">Owner & Operator &bull; Carbondale, IL</p>
           </div>
         </div>
-        <div className="flex w-full min-w-0 flex-col gap-2 lg:flex-1">
+        <div className="flex w-full min-w-0 flex-col gap-2 md:flex-1">
           <p className="text-xs font-semibold tracking-wider text-muted-gold uppercase">
             meet the founder
           </p>
-          <h2 className="text-4xl font-extrabold text-primary-color">
+          <h2 className="text-[clamp(1.75rem,4.25vw,2.25rem)] font-extrabold text-primary-color">
             Committed to Cleaner, Healthier Spaces.
           </h2>
           <p className="text-sm">
@@ -39,7 +40,7 @@ export default function About() {
                 className="shrink-0 rounded-full bg-black/5 p-1 text-secondary-color"
               />
               <div className="flex flex-col gap-2">
-                <p className="leading-none font-bold">
+                <p className="leading-tight font-bold">
                   Veteran Owned & Operated
                 </p>
                 <p className="text-xs">
@@ -54,7 +55,7 @@ export default function About() {
                 className="shrink-0 rounded-full bg-black/5 p-1 text-secondary-color"
               />
               <div className="flex flex-col gap-2">
-                <p className="leading-none font-bold">
+                <p className="leading-tight font-bold">
                   Meticulous Attention to Detail
                 </p>
                 <p className="text-xs">
@@ -69,7 +70,7 @@ export default function About() {
                 className="shrink-0 rounded-full bg-black/5 p-1 text-secondary-color"
               />
               <div className="flex flex-col gap-2">
-                <p className="leading-none font-bold">
+                <p className="leading-tight font-bold">
                   Locally Owned & Community Rooted
                 </p>
                 <p className="text-xs">
@@ -84,7 +85,7 @@ export default function About() {
                 className="shrink-0 rounded-full bg-black/5 p-1 text-secondary-color"
               />
               <div className="flex flex-col gap-2">
-                <p className="leading-none font-bold">
+                <p className="leading-tight font-bold">
                   Safe, Eco-Friendly Formulations
                 </p>
                 <p className="text-xs">
@@ -95,7 +96,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div></div>
       </div>
     </section>
   )

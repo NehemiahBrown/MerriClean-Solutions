@@ -1,9 +1,9 @@
-import { BadgeCheck, Phone, Mail, Earth, Clock, MapPin } from "lucide-react"
+import { Phone, Mail, Earth, Clock, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
     <footer className="w-full bg-primary-color">
-      <div className="mx-auto w-full max-w-5xl px-6 py-6">
+      <div className="flex flex-col gap-4 mx-auto w-full max-w-5xl px-6 py-6">
         <div className="flex w-full flex-col justify-between gap-4 md:flex-row">
           <div className="flex max-w-62.5 flex-col gap-3">
             <p className="text-sm font-semibold text-card-color">
@@ -30,15 +30,15 @@ export default function Footer() {
               Get In Touch
             </p>
             <div className="flex flex-col gap-1.5">
-              <div className="flex items-center gap-1 text-xs text-surface-text">
+              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color">
                 <Phone size={12} />
                 <a href="tel:6182807014">(618)-280-7014</a>
               </div>
-              <div className="flex items-center gap-1 text-xs text-surface-text">
+              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color">
                 <Mail size={12} />
                 <a href="mailto:tevin533@gmail.com">tevin533@gmail.com</a>
               </div>
-              <div className="flex items-center gap-1 text-xs text-surface-text">
+              <div className="flex items-center gap-1 text-xs text-surface-text hover:underline underline-offset-4 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-color">
                 <Earth size={12} />
                 <a href="https://www.facebook.com/profile.php?id=61579963706617">
                   Facebook: Merriclean Solutions
@@ -58,9 +58,13 @@ export default function Footer() {
                     Business Hours:
                   </p>
                 </div>
-                <p className="text-xs text-surface-text">
-                  Monday – Saturday: 8:00 AM – 6:00 PM
-                </p>
+                <div className="mt-1 flex flex-col gap-1">
+                  <p className="text-xs text-surface-text">
+                    Monday – Saturday: 8:00 AM – 6:00 PM
+                  </p>
+                  <p className="text-xs text-surface-text">Sunday: By Appointment</p>
+                </div>
+
               </div>
 
               <div>
@@ -70,15 +74,18 @@ export default function Footer() {
                     Service Region:
                   </p>
                 </div>
-                <p className="text-xs text-surface-text">
+                <p className="mt-1 text-xs text-surface-text">
                   Carbondale, IL & surrounding communities
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <p className="text-xs font-extrabold text-surface-text border-t border-white/10 pt-4">© 2026 Merriclean Solutions. All rights reserved.</p>
+        </div>
       </div>
+
     </footer>
   )
 }

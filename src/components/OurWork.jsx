@@ -12,19 +12,17 @@ export default function OurWork() {
       id="our-work"
       className="w-full scroll-mt-18 bg-secondary-background px-8 py-8"
     >
-      <div>
-        <div className="flex flex-col items-center justify-center gap-2 text-center">
-          <p className="rounded-md bg-tertiary-background px-2 text-xs font-extrabold tracking-wider text-tertiary-color uppercase">
-            portfolio & results
-          </p>
-          <h2 className="text-4xl font-bold text-card-color">
-            Real Spaces. Real Results.
-          </h2>
-          <p className="mx-auto max-w-2xl text-sm text-surface-text">
-            Explore real residential and commercial transformations delivered
-            across Southern Illinois.
-          </p>
-        </div>
+      <div className="flex flex-col items-center justify-center gap-2 text-center">
+        <p className="rounded-md bg-tertiary-background px-2 text-xs font-extrabold tracking-wider text-tertiary-color uppercase">
+          portfolio & results
+        </p>
+        <h2 className="text-[clamp(1.75rem,4.25vw,2.25rem)] font-bold text-card-color">
+          Real Spaces. Real Results.
+        </h2>
+        <p className="mx-auto max-w-2xl text-sm text-surface-text">
+          Explore real residential and commercial transformations delivered
+          across Southern Illinois.
+        </p>
       </div>
       <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
         <div className="flex h-full w-full flex-col overflow-hidden rounded-lg">
@@ -32,6 +30,7 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
+                loading="lazy"
                 src={DirtyShelf}
                 alt="An unorganized living space."
               />
@@ -42,6 +41,7 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
+                loading="lazy"
                 src={CleanShelf}
                 alt="An organized living space."
               />
@@ -54,9 +54,9 @@ export default function OurWork() {
             <h3 className="text-xs font-semibold tracking-wider text-tertiary-color uppercase">
               living space renewal
             </h3>
-            <h4 className="text-xl font-bold text-card-color"></h4>
+            <h4 className="text-xl font-bold text-card-color">Living Room & Common Area Detailing</h4>
             <p className="text-surface-text">
-              Living Room & Common Area Detailing Transforming cluttered spaces
+              Transforming cluttered spaces
               into cleaner, more organized environments.
             </p>
             <div className="mt-auto flex flex-col gap-2">
@@ -86,8 +86,9 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
+                loading="lazy"
                 src={DirtyFan}
-                alt="An unorganized living space."
+                alt="A dirty fan."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-secondary-color px-2 py-1 text-xs font-bold tracking-wide text-card-color uppercase">
                 Before
@@ -96,8 +97,9 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
+                loading="lazy"
                 src={CleanFan}
-                alt="An organized living space."
+                alt="A clean fan."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-tertiary-color px-2 py-1 text-xs font-bold tracking-wide uppercase">
                 After
@@ -142,8 +144,9 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
+                loading="lazy"
                 src={DirtySink}
-                alt="An unorganized living space."
+                alt="An dirty sink."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-secondary-color px-2 py-1 text-xs font-bold tracking-wide text-card-color uppercase">
                 Before
@@ -152,8 +155,9 @@ export default function OurWork() {
             <div className="relative aspect-square min-w-0 flex-1 overflow-hidden lg:aspect-3/4">
               <img
                 className="h-full w-full rounded-lg object-cover"
+                loading="lazy"
                 src={CleanSink}
-                alt="An organized living space."
+                alt="A clean sink."
               />
               <p className="absolute top-2 left-2 rounded-lg bg-tertiary-color px-2 py-1 text-xs font-bold tracking-wide uppercase">
                 After
@@ -210,17 +214,18 @@ export default function OurWork() {
           <div className="w-px self-stretch bg-card-color/60"></div>
           <div className="flex flex-col items-center">
             <p className="flex items-center text-5xl font-bold text-card-color">
-              {" "}
-              100%{" "}
+
+              100%
             </p>
             <p className="text-center text-sm font-bold text-card-color">
               Commitment to Quality
             </p>
             <p className="px-2 text-center text-sm text-surface-text">
-              Attention to Detail in{" "}
+              Attention to Detail in &nbsp;
               <span className="font-bold underline underline-offset-3">
                 Every
-              </span>{" "}
+              </span>
+              &nbsp;
               Clean
             </p>
           </div>

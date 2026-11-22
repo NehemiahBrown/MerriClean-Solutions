@@ -50,34 +50,44 @@ export default function NavBar() {
         <p className="font-bold whitespace-nowrap">Merriclean Solutions</p>
         <ul className="hidden gap-4 md:flex">
           <li
-            className={`border-b hover:border-b-secondary-color ${visibleSection === "home" ? "border-b-secondary-color" : "border-transparent"}`}
+            className={`border-b hover:border-b-secondary-color ${visibleSection === "home" ? "border-b-secondary-color" : "border-transparent"} transition-colors duration-200`}
           >
-            <a href="#home">Home</a>
+            <a className="focus-visible:outline-2
+focus-visible:outline-offset-2
+focus-visible:outline-secondary-color" href="#home">Home</a>
           </li>
           <li
-            className={`border-b hover:border-b-secondary-color ${visibleSection === "services" ? "border-b-secondary-color" : "border-transparent"}`}
+            className={`border-b hover:border-b-secondary-color ${visibleSection === "services" ? "border-b-secondary-color" : "border-transparent"} transition-colors duration-200`}
           >
-            <a href="#services">Services</a>
+            <a className="focus-visible:outline-2
+focus-visible:outline-offset-2
+focus-visible:outline-secondary-color" href="#services">Services</a>
           </li>
           <li
-            className={`border-b hover:border-b-secondary-color ${visibleSection === "our-work" ? "border-b-secondary-color" : "border-transparent"}`}
+            className={`border-b hover:border-b-secondary-color ${visibleSection === "our-work" ? "border-b-secondary-color" : "border-transparent"} transition-colors duration-200`}
           >
-            <a href="#our-work">Our Work</a>
+            <a className="focus-visible:outline-2
+focus-visible:outline-offset-2
+focus-visible:outline-secondary-color" href="#our-work">Our Work</a>
           </li>
           <li
-            className={`border-b hover:border-b-secondary-color ${visibleSection === "about" ? "border-b-secondary-color" : "border-transparent"}`}
+            className={`border-b hover:border-b-secondary-color ${visibleSection === "about" ? "border-b-secondary-color" : "border-transparent"} transition-colors duration-200`}
           >
-            <a href="#about">About</a>
+            <a className="focus-visible:outline-2
+focus-visible:outline-offset-2
+focus-visible:outline-secondary-color" href="#about">About</a>
           </li>
           <li
-            className={`border-b hover:border-b-secondary-color ${visibleSection === "contact" ? "border-b-secondary-color" : "border-transparent"}`}
+            className={`border-b hover:border-b-secondary-color ${visibleSection === "contact" ? "border-b-secondary-color" : "border-transparent"} transition-colors duration-200`}
           >
-            <a href="#contact">Contact</a>
+            <a className="focus-visible:outline-2
+focus-visible:outline-offset-2
+focus-visible:outline-secondary-color" href="#contact">Contact</a>
           </li>
         </ul>
         <a
           href="#contact"
-          className="hidden cursor-pointer rounded-md bg-button-background px-4 py-1 text-sm text-light-text hover:brightness-90 md:flex"
+          className="hidden cursor-pointer rounded-md bg-button-background px-4 py-1 text-sm text-light-text hover:brightness-90 md:flex "
         >
           Request a Quote
         </a>
@@ -100,7 +110,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-primary-color hover:text-card-color"
                 href="#home"
               >
                 Home
@@ -109,7 +119,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-primary-color hover:text-card-color"
                 href="#services"
               >
                 Services
@@ -118,7 +128,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-primary-color hover:text-card-color"
                 href="#our-work"
               >
                 Our Work
@@ -127,7 +137,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-primary-color hover:text-card-color"
                 href="#about"
               >
                 About
@@ -136,7 +146,7 @@ export default function NavBar() {
             <li>
               <a
                 onClick={() => setHamburgerOpen(false)}
-                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-surface-color hover:text-card-color"
+                className="block w-full rounded-md px-4 py-3 transition-colors duration-200 hover:bg-primary-color hover:text-card-color"
                 href="#contact"
               >
                 Contact

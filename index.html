@@ -1,56 +1,50 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MerriClean Solutions</title>
-  </head>
 
-  <body>
-    <form
-      name="quote-request"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      hidden
-    >
-      <div class="hidden">
-        <label>
-          Don't fill this out if you're human:
-          <input type="text" name="bot-field" />
-        </label>
-      </div>
-      <input type="text" name="fullName" />
-      <input type="email" name="email" />
-      <input type="tel" name="phoneNumber" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MerriClean Solutions</title>
+</head>
 
-      <select name="serviceType">
-        <option value="residential">Residential Cleaning</option>
-        <option value="commercial">Commercial Cleaning</option>
-        <option value="deep">Deep Cleaning</option>
-        <option value="regular">Regular Cleaning</option>
-        <option value="general">General Inquiry</option>
-      </select>
+<body>
+  <form name="quote-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <div class="hidden">
+      <label>
+        Don't fill this out if you're human:
+        <input type="text" name="bot-field" />
+      </label>
+    </div>
+    <input type="text" name="fullName" />
+    <input type="email" name="email" />
+    <input type="tel" name="phoneNumber" />
 
-      <select name="propertyType">
-        <option value="single-family">Single-Family Home</option>
-        <option value="apartment">Apartment / Condo</option>
-        <option value="townhouse">Townhouse / Duplex</option>
-        <option value="commercial">Commercial</option>
-        <option value="individual-room">Individual Room</option>
-        <option value="other">Other</option>
-      </select>
+    <select name="serviceType">
+      <option value="Residential">Residential Cleaning</option>
+      <option value="Commercial">Commercial Cleaning</option>
+      <option value="Deep">Deep Cleaning</option>
+      <option value="Regular">Regular Cleaning</option>
+      <option value="General">General Inquiry</option>
+    </select>
 
-      <textarea name="details"></textarea>
-    </form>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <select name="propertyType">
+      <option value="Single Family">Single-Family Home</option>
+      <option value="Apartment">Apartment / Condo</option>
+      <option value="Townhouse">Townhouse / Duplex</option>
+      <option value="Commercial">Commercial</option>
+      <option value="Individual Room">Individual Room</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <textarea name="details"></textarea>
+  </form>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

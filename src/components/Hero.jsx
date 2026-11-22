@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="w-full lg:w-[42%] lg:shrink-0">
+        <div className="w-full lg:w-[42%] lg:shrink-0 shadow-card">
           <img
             className="aspect-video w-full rounded-lg object-cover lg:aspect-square"
             src={CleanSink}

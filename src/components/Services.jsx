@@ -15,7 +15,7 @@ export default function Services() {
         <p className="mx-auto text-xs font-extrabold tracking-wider text-muted-gold uppercase">
           What we offer
         </p>
-        <h2 className="text-4xl font-extrabold text-primary-color">
+        <h2 className="text-[clamp(1.75rem,4.25vw,2.25rem)] font-extrabold text-primary-color">
           Cleaning Services for Every Space
         </h2>
         <p className="mx-auto max-w-2xl text-sm">
@@ -23,34 +23,34 @@ export default function Services() {
           maintain pristine, healthy environments.
         </p>
       </div>
-      <div className="mx-auto mt-8 grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+      <div className="mx-auto mt-8 grid w-full max-w-6xl grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4 shadow-card">
           <House size={40} className="rounded-md bg-surface-color p-2" />
           <p className="text-lg font-semibold">Residential Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;
             <span className="text-lg font-extrabold">$80</span> &nbsp;/visit
           </p>
-          <p className="text-xs">
+          <p className="text-sm">
             Comprehensive home cleaning covering kitchens, bathrooms, living
             areas, and bedrooms tailored to your household schedule.
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Dusting & wiping surfaces</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Dusting & wiping surfaces</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Vacuuming & Mopping</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Vacuuming & Mopping</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Sanitizing Bathrooms</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Sanitizing Bathrooms</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Eco-friendly Supplies</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Eco-friendly Supplies</p>
             </div>
           </div>
           <div className="mt-auto w-full pt-6">
@@ -62,33 +62,33 @@ export default function Services() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4 shadow-card">
           <Building size={40} className="rounded-md bg-surface-color p-2" />
           <p className="text-lg font-semibold">Commercial Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;{" "}
             <span className="text-lg font-extrabold">$150</span> &nbsp;/visit
           </p>
-          <p className="text-xs">
+          <p className="text-sm">
             Professional janitorial and workspace sanitation for corporate
             offices, retail storefronts, and medical practices.
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Conference room detailing</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Conference room detailing</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Restroom sterilization</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Restroom sterilization</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Trash & recycling removal</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Trash & recycling removal</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Breakroom & common area sanitation</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Breakroom & common area sanitation</p>
             </div>
           </div>
           <div className="mt-auto w-full pt-6">
@@ -100,7 +100,7 @@ export default function Services() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4 shadow-card">
           <BroomSparkles
             size={40}
             className="rounded-md bg-surface-color p-2"
@@ -110,26 +110,26 @@ export default function Services() {
             Starting at &nbsp;{" "}
             <span className="text-lg font-extrabold">$175</span> &nbsp;/visit
           </p>
-          <p className="text-xs">
+          <p className="text-sm">
             Intensive top-to-bottom scrub addressing built-up grime, inside
             appliances, baseboards, and neglected corners.
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Inside oven & refrigerator</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Inside oven & refrigerator</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Baseboards & door frames</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Baseboards & door frames</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Detailed grout cleaning</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Detailed grout cleaning</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Interior window polishing</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Interior window polishing</p>
             </div>
           </div>
           <div className="mt-auto w-full pt-6">
@@ -141,33 +141,33 @@ export default function Services() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4">
+        <div className="flex flex-col gap-1 rounded-md bg-card-color p-4 shadow-card">
           <CalendarDays size={40} className="rounded-md bg-surface-color p-2" />
           <p className="text-lg font-semibold">Regular Cleaning</p>
           <p className="text-xs">
             Starting at &nbsp;{" "}
             <span className="text-lg font-extrabold">$75</span> &nbsp;/visit
           </p>
-          <p className="text-xs">
+          <p className="text-sm">
             Dependable recurring maintenance cleaning scheduled weekly,
             bi-weekly, or monthly to keep spaces continuously fresh.
           </p>
           <div className="mt-2 flex flex-col gap-1">
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Scheduled recurring visits</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Scheduled recurring visits</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Same dedicated cleaner</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Same dedicated cleaner</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Priority scheduling slot</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Priority scheduling slot</p>
             </div>
             <div className="flex items-center gap-1">
-              <CircleCheck className="text-secondary-color" size={12} />
-              <p className="text-xs">Straightforward pay-per-visit</p>
+              <CircleCheck className="text-secondary-color shrink-0" size={16} />
+              <p className="text-sm">Straightforward pay-per-visit</p>
             </div>
           </div>
           <div className="mt-auto w-full pt-6">
