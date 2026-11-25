@@ -218,9 +218,8 @@ export default function Contact() {
                     className="text-sm font-extrabold text-card-color"
                     href="https://www.facebook.com/profile.php?id=61579963706617"
                   >
-                    Facebook: Solutions
+                    Facebook: Merriclean Solutions
                   </a>
-                  Merriclean
                 </div>
               </div>
             </div>
