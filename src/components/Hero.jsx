@@ -1,27 +1,14 @@
 import { ChevronRight, Medal, ShieldCheck, CircleCheckBig } from "lucide-react"
-import { useState, useEffect } from "react"
 import { getHeroContent, urlFor } from "../lib/sanity"
+import { useSanityContent } from "../hooks/useSanityContent.js"
 export default function Hero() {
-  const [heroContent, setHeroContent] = useState(null)
-  const [error, setError] = useState(null)
 
-  useEffect(() => {
-    async function fetchHeroContent() {
-      try {
-        const data = await getHeroContent()
-        console.log(data)
-        setHeroContent(data)
-      } catch (error) {
-        setError(error)
-      }
-    }
-    fetchHeroContent()
-  }, [])
+const {sanityContent, error, loading} = useSanityContent(getHeroContent)
 
   if (error) {
     return <div>Error loading hero content</div>
   }
-  if (!heroContent) {
+  if (loading) {
     return <div>Loading...</div>
   }
 
@@ -36,17 +23,17 @@ export default function Hero() {
             <ChevronRight className="text-secondary-color" size={16} />
           </div>
           <h1 className="text-[clamp(2rem,5vw,3rem)] leading-tight font-extrabold">
-            {heroContent?.headingTextOne}
+            {sanityContent?.headingTextOne}
             <span className="block text-secondary-color">
-              {heroContent?.headingTextTwo}{" "}
+              {sanityContent?.headingTextTwo}{" "}
             </span>
           </h1>
-          <p className="max-w-lg">{heroContent?.subheading}</p>
+          <p className="max-w-lg">{sanityContent?.subheading}</p>
           <a
             href="#contact"
             className="cursor-pointer self-start rounded-md bg-button-background px-4 py-2 text-sm text-light-text hover:brightness-90"
           >
-            {heroContent?.buttonText}
+            {sanityContent?.buttonText}
           </a>
           <div className="flex flex-col flex-wrap gap-2 text-xs font-bold sm:flex-row">
             <div className="flex items-center gap-1">
@@ -67,7 +54,7 @@ export default function Hero() {
         <div className="w-full shadow-card lg:w-[42%] lg:shrink-0">
           <img
             className="aspect-video w-full rounded-lg object-cover lg:aspect-square"
-            src={urlFor(heroContent?.heroImage).url()}
+            src={urlFor(sanityContent?.heroImage).url()}
             alt="A clean sink."
           />
         </div>

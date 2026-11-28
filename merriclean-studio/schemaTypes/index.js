@@ -1,2 +1,2 @@
 import Hero from './hero.js'
-export const schemaTypes = [Hero]
+export const schemaTypes = [Hero, Services]
